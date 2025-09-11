@@ -1,6 +1,9 @@
 from playwright.sync_api import sync_playwright, expect
+import pytest
 
 
+@pytest.mark.regression
+@pytest.mark.courses
 def test_visible_page_courses():
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=False)
