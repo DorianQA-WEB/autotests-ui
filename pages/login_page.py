@@ -1,3 +1,4 @@
+from components.authentication.login_form_component import LoginFormComponent
 from pages.base_page import BasePage
 from playwright.sync_api import Page, expect
 
@@ -6,8 +7,11 @@ class LoginPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
 
+        self.login_form_component = LoginFormComponent(page)
+
         self.email_input = page.get_by_test_id("login-form-email-input").locator("input")
         self.password_input = page.get_by_test_id("login-form-password-input").locator("input")
+
         self.login_button = page.get_by_test_id("login-page-login-button")
         self.registration_link = page.get_by_test_id('login-page-registration-link')
         self.wrong_email_or_password = page.get_by_test_id("login-page-wrong-email-or-password-alert")
