@@ -11,7 +11,7 @@ class RegistrationFormComponent(BaseComponent):
         self.password_input = page.get_by_test_id('registration-form-password-input').locator('input')
 
 
-    def fill_login(self, email: str, username: str, password: str):
+    def fill_(self, email: str, username: str, password: str):
         self.email_input.fill(email)
         expect(self.email_input).to_have_value(email)
         self.username_input.fill(username)

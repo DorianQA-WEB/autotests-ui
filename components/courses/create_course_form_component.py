@@ -15,7 +15,7 @@ class CreateCourseFormComponent(BaseComponent):
             'create-course-form-description-input').locator('textarea').first
 
 
-    def fill_create_course_form(
+    def fill(
             self,
             title: str,
             estimated_time: str,
@@ -38,7 +38,7 @@ class CreateCourseFormComponent(BaseComponent):
         self.min_score_input.fill(min_score)
         expect(self.min_score_input).to_have_value(min_score)
 
-    def check_visible_create_course_form(
+    def check_visible(
             self,
             title: str,
             estimated_time: str,
