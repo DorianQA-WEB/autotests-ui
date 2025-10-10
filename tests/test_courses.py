@@ -4,7 +4,7 @@ from pages.create_course_page import CreateCoursePage
 
 @pytest.mark.regression
 @pytest.mark.courses
-def test_empty_courses_list(chromium_page_with_state, courses_list_page: CoursesListPage):
+def test_empty_courses_list( courses_list_page: CoursesListPage):
         courses_list_page.visit('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses')
         courses_list_page.navbar.check_visible('username')
         courses_list_page.sidebar.check_visible()
