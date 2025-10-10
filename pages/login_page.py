@@ -3,9 +3,7 @@ from elements.button import Button
 from elements.text import Text
 from elements.link import Link
 from pages.base_page import BasePage
-from playwright.sync_api import Page, expect
-
-from playwright_autorization import wrong_email_or_password
+from playwright.sync_api import Page
 
 
 class LoginPage(BasePage):
