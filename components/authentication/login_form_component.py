@@ -8,8 +8,8 @@ class LoginFormComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self.email_input = Input(page, "login-form-email-input", "Email input")
-        self.password_input = Input(page, "login-form-password-input", "Password input")
+        self.email_input = Input(page, "login-form-email-input", "Email")
+        self.password_input = Input(page, "login-form-password-input", "Password")
 
 
     def fill(self, email: str, password: str):

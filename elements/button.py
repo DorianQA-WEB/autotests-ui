@@ -3,11 +3,11 @@ from playwright.sync_api import expect
 
 
 class Button(BaseElement):
-    def check_enabled(self, **kwargs):
-        locator = self.get_locator(**kwargs)
+    def check_enabled(self, nth: int = 0, **kwargs):
+        locator = self.get_locator(nth, **kwargs)
         expect(locator).not_to_be_enabled()
 
-    def check_disabled(self, **kwargs):
-        locator = self.get_locator(**kwargs)
+    def check_disabled(self, nth: int = 0, **kwargs):
+        locator = self.get_locator(nth, **kwargs)
         expect(locator).not_to_be_disabled()
 

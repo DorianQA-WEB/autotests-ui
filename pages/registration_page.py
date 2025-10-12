@@ -13,7 +13,7 @@ class RegistrationPage(BasePage):
         self.registration_form = RegistrationFormComponent(page)
 
         self.registration_button = Button(page, 'registration-page-registration-button', "Registration")
-        self.login_link = Link(page, 'registration-page-login-link', "Login link")
+        self.login_link = Link(page, 'registration-page-login-link', "Login")
 
 
 
