@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page
 
 from components.base_component import BaseComponent
 from components.courses.course_view_menu_component import CourseViewMenuComponent
@@ -32,3 +32,4 @@ class CourseViewComponent(BaseComponent):
 
         self.estimated_time_text.check_visible(nth=index)
         self.estimated_time_text.check_have_text(f'Estimated time: {estimated_time}', nth=index)
+
