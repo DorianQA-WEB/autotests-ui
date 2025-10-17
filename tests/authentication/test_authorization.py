@@ -8,7 +8,6 @@ from pages.authentication.login_page import LoginPage
 from pages.authentication.registration_page import RegistrationPage
 from pages.dasboard.dashboard_page import DashboardPage
 from allure_commons.types import Severity
-from config import settings
 from tools.routes import AppRoute
 
 
