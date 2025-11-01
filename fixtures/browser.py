@@ -1,7 +1,6 @@
 import pytest
 from playwright.sync_api import  Page, Playwright
 from pytest_playwright.pytest_playwright import browser_type
-
 from pages.authentication.registration_page import RegistrationPage
 from _pytest.fixtures import SubRequest
 from config import settings
