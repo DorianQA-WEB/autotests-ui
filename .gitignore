@@ -14,3 +14,10 @@ allure-report
 *.json
 vides
 tracing
+
+#coverage
+coverage.html
+coverage-results
+coverage-report.json
+coverage-history.json
+
