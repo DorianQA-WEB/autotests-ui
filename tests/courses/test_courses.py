@@ -32,7 +32,7 @@ class TestCourses:
         courses_list_page.toolbar_view.check_visible()
         courses_list_page.check_empty_view_icon()
 
-        allure.attach.file('index.html', attachment_type=allure.attachment_type.HTML)
+        allure.attach.file('coverage.html', attachment_type=allure.attachment_type.HTML)
 
     @allure.title('Create course')
     @allure.severity(Severity.CRITICAL)
