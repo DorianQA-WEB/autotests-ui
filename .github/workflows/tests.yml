@@ -88,10 +88,9 @@ jobs:
           path: allure-results
 
       - name: Generates Allure Report with history
-        uses: allure-framework/allure-github-action@v2
+        uses: simple-elf/allure-report-action@v1.8
         if: always()
         with:
-          version: '2.24.0'
           allure_results: allure-results
           allure_history: allure-history
 
